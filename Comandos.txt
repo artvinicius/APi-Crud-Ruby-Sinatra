@@ -1,0 +1,14 @@
+
+
+curl -i --location --request GET 'localhost:4567/' \
+--form 'autor= Arthur'
+
+curl -i --location --request POST 'localhost:4567/' \
+--form 'autor= Arthur'
+
+curl -i --location --request PUT 'localhost:4567/' \
+--form 'autor= Arthur'
+
+curl -i --location --request DELETE 'localhost:4567/' \
+--form 'autor= Arthur'
+
