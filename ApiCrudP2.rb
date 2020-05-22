@@ -57,4 +57,4 @@ end
 # GET >  curl localhost:4567/api/empresas -i
 # GET por CNPJ > curl localhost:4567/api/empresas/111 -i
 # POST > curl localhost:4567/api/empresas/111 -i -X POST -d ' { } '
-# DELETE > curl http://localhost:4567/api/empresas/123456789101 -i -X DELETE
+# DELETE > curl http://localhost:4567/api/empresas/123456789101 -i -X DELETEe
