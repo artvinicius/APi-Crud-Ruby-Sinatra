@@ -40,19 +40,19 @@ end
 
 
 
-put '/api/empresas' do 
-    "
-     Atualizando Trabalhador  em #{Time.now}
+# put '/api/empresas' do 
+#     "
+#      Atualizando Trabalhador  em #{Time.now}
     
-    "
-end
+#     "
+# end
 
-delete '/api/empresas/:cnpj' do 
-    "
-     Deletando Empresa  em #{Time.now}
+# delete '/api/empresas/:cnpj' do 
+#     "
+#      Deletando Empresa  em #{Time.now}
     
-    "
-end
+#     "
+# end
 
 # GET >  curl localhost:4567/api/empresas -i
 # GET por CNPJ > curl localhost:4567/api/empresas/111 -i
