@@ -39,32 +39,20 @@ post '/api/empresas/:cnpj' do |cnpj|
 end
 
 
-put '/api/empresas/:cnpj' do |cnpj|
-    if (cnpj.include?(cnpj) then
-        status 404
-    else
-        "
-        Cnpj Atualizado #{cnpj} em #{Time.now}
-        "
-        listacnpjs << cnpj
-        status 200
-    end
-end
+put '/api/empresas' do
+    "
+    Atualizando Trabalhador  em #{Time.now}
 
-
-    # "
-    #  Atualizando Trabalhador  em #{Time.now}
-    
-    # "
+    "
 end
 
 delete '/api/empresas/:cnpj' do 
-    if listacnpjs.include?(cnpjEmpresar) then listacnpjs.delete;  
     "
      Deletando Empresa  em #{Time.now}
     
     "
 end
+
 
 # GET >  curl localhost:4567/api/empresas -i
 # GET por CNPJ > curl localhost:4567/api/empresas/111 -i
