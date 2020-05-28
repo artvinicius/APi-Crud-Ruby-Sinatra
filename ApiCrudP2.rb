@@ -46,15 +46,24 @@ put '/api/empresas' do
     "
 end
 
-delete '/api/empresas/:cnpj' do 
+delete '/api/empresas/:cnpj' do |cnpj|
+    cnpjEmpresar = params['cnpj']
+    if listacnpjs.include?(cnpj)
+        listacnpjs.delete(cnpj)
+
+
     "
-     Deletando Empresa  em #{Time.now}
+     Deletando Empresa com Cnpj: #{params['cnpj']} em #{Time.now}
     
     "
+    else
+    status 404
+    end
 end
 
 
 # GET >  curl localhost:4567/api/empresas -i
 # GET por CNPJ > curl localhost:4567/api/empresas/111 -i
 # POST > curl localhost:4567/api/empresas/111 -i -X POST -d ' { } '
-# DELETE > curl http://localhost:4567/api/empresas/123456789101 -i -X DELETE
+# DELETE > curl http://localhost:4567/api/empresas/111 -i -X DELETE
+
